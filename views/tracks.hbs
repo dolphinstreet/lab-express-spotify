@@ -1,0 +1,17 @@
+<section id="track-page"></div>
+  <div id="track-container">
+    <div id="track-header">
+      <h2>Title</h2>
+      <h2>Listen</h2>
+    </div>
+
+    <div>
+      {{#each allTracks}}
+        <div id="one-track">
+          <h3>{{this.name}}</h3>
+          <audio src="{{this.previewUrl}}" controls="on"></audio>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</section>

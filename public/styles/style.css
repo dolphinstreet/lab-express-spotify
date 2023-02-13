@@ -1,0 +1,137 @@
+:root{
+    --red: rgb(229, 71, 71);
+    --darkRed:rgb(192, 49, 49);
+    --white:rgb(241, 231, 231);
+    --black:rgb(40, 37, 37);
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#home{
+    height: 100vh;
+    background-image :url(/images/spotify-background.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home > div{
+    background-color: rgba(255, 255, 255, 0.648);
+    width: 50%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    width: 50%;
+    text-align: center;
+    margin: 0;
+}
+ #home input {
+    width: 100%;
+    height: 2rem;
+    margin-bottom: 2rem;
+ }
+
+ #home button {
+    all: unset;
+    background-color:var(--red);
+    color: var(--white);
+    padding: 0.6rem;
+ }
+
+ #home button:hover {
+    background-color: var(--darkRed);
+ }
+
+
+ /*________------------------______________**________------------------______________*/
+
+.elements-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10vw;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+    background-color: rgba(214, 205, 194, 0.706);
+}
+.card {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 20vw;
+}
+
+.card img{
+    width: 100%;
+}
+.card p{
+    color:var(--black);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.card a{
+    all: unset;
+    background-color:var(--red);
+    color:var(--white);
+    padding: 0.6rem 1.2rem;
+}
+
+.card a:hover{
+    background-color:var(--darkRed);
+}
+
+ /*________------------------______________**________------------------______________*/
+
+#albums-for{
+    text-align: center;
+    margin: 0 auto;
+    color: var(--white);
+    background-color: var(--black);
+    padding: 0.6rem;
+}
+
+ /*________------------------______________**________------------------______________*/
+ 
+#track-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(231, 219, 219);
+}
+
+#track-container{
+    margin: 3rem 0;
+    width: 80vw;
+}
+
+ #track-header{
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+ }
+
+ #one-track{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--white);
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.127);
+}
