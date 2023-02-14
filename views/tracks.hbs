@@ -9,7 +9,9 @@
       {{#each allTracks}}
         <div id="one-track">
           <h3>{{this.name}}</h3>
-          <audio src="{{this.previewUrl}}" controls="on"></audio>
+          <audio controls>
+            <source src="{{this.preview_url}}">
+          </audio>
         </div>
       {{/each}}
     </div>
